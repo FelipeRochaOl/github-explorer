@@ -1,5 +1,5 @@
 #Project GoStack Bootcamp
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/3e5e5215b4e54a5ca17bec02e31c1224-with-play.gif)](https://www.loom.com/share/3e5e5215b4e54a5ca17bec02e31c1224)
 
 # React Documentation
 # Getting Started with Create React App
