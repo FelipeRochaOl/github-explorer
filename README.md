@@ -1,5 +1,5 @@
 # Upgrade Project GoStack Bootcamp - Github Explorer
-[![Watch the video](https://cdn.loom.com/sessions/thumbnails/3e5e5215b4e54a5ca17bec02e31c1224-with-play.gif)](https://www.loom.com/share/3e5e5215b4e54a5ca17bec02e31c1224)
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/13b6c569a33e4548a83239a20867c603-with-play.gif)](https://www.loom.com/embed/13b6c569a33e4548a83239a20867c603)
 
 # Project GoStack Bootcamp original
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/3e5e5215b4e54a5ca17bec02e31c1224-with-play.gif)](https://www.loom.com/share/3e5e5215b4e54a5ca17bec02e31c1224)
