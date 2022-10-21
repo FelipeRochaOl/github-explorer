@@ -5,7 +5,7 @@
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/3e5e5215b4e54a5ca17bec02e31c1224-with-play.gif)](https://www.loom.com/share/3e5e5215b4e54a5ca17bec02e31c1224)
 
 # Link Project in netlify
-https://dreamy-minsky-64bc4b.netlify.app/
+https://github-explorer.felipe-rocha.com
 
 # React Documentation
 # Getting Started with Create React App
