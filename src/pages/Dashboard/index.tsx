@@ -99,7 +99,7 @@ const Dashboard: React.FC = () => {
       <Form hasError={!!error} onSubmit={handleAddNewRepository}>
         <input
           type="text"
-          placeholder="Type here..."
+          placeholder="Path repository in github, example: facebook/react"
           value={newRepo}
           onChange={e => setNewRepo(e.target.value)}
         />
