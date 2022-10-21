@@ -25,7 +25,6 @@ const Dashboard: React.FC = () => {
     const localStorageRepositories = localStorage.getItem(
       '@github-repository:repositories',
     )
-
     if (localStorageRepositories) {
       return JSON.parse(localStorageRepositories)
     }
@@ -36,24 +35,20 @@ const Dashboard: React.FC = () => {
     event: FormEvent<HTMLFormElement>,
   ): Promise<void> {
     event.preventDefault()
-
     if (!newRepo) {
       setError('Preencha o campo com autor/repositório antes de pesquisar')
       return
     }
-
     try {
       const response = await api.get<Repository>(`repos/${newRepo}`)
       const repository = response.data
       const find = repositories.filter(filterRepo =>
         filterRepo.full_name.includes(repository.full_name),
       )
-
       if (find.length) {
         setError('Este repositório já esta cadastrado')
         return
       }
-
       setRepositories([...repositories, repository])
       setError('')
       setNewRepo('')
@@ -73,7 +68,6 @@ const Dashboard: React.FC = () => {
       setFilter('')
       return
     }
-
     setFilterRepositories([])
     setFilter('')
   }
@@ -101,28 +95,25 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Logo src={logo} alt="github-explorer" />
-      <Title>Explore repositórios no Github.</Title>
+      <Title>Explore repositories in Github.</Title>
       <Form hasError={!!error} onSubmit={handleAddNewRepository}>
         <input
           type="text"
-          placeholder="Digite aqui"
+          placeholder="Type here..."
           value={newRepo}
           onChange={e => setNewRepo(e.target.value)}
         />
-        <button type="submit">Pesquisar</button>
+        <button type="submit">Search</button>
       </Form>
-
       {error && <Error>{error}</Error>}
-
       <Filter>
         <input
           type="text"
-          placeholder="Procurar"
+          placeholder="Search"
           onChange={e => setFilter(e.target.value)}
           onKeyPress={e => handleFilter(e)}
         />
       </Filter>
-
       <Repositories>
         {repos.map(repository => {
           return (

@@ -44,7 +44,6 @@ const Repository: React.FC = () => {
           api.get(`repos/${params.repository}`),
           api.get(`repos/${params.repository}/issues`),
         ])
-
         setRepository(getRepository.data)
         setIssues(getIssues.data)
       } catch (err) {
@@ -53,13 +52,14 @@ const Repository: React.FC = () => {
     }
     searchPromise()
   }, [params.repository])
+
   return (
     <>
       <Header>
         <Logo src={logo} alt="github-explorer" />
         <Link to="/">
           <FiChevronLeft />
-          Voltar
+          Back
         </Link>
       </Header>
       {repository && (
@@ -82,7 +82,7 @@ const Repository: React.FC = () => {
             </li>
             <li>
               <strong>{repository.open_issues_count}</strong>
-              <p>Issues Abertas</p>
+              <p>Open Issues</p>
             </li>
           </ul>
         </RepositoryInfo>
